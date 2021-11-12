@@ -11,9 +11,9 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 ## Installation
 **Base**
 
-[] Create two inputs and a submit button that shows the "=" as well as a "C" button to clear calculation. Create math operations buttons
+[x] Create two inputs and a submit button that shows the "=" as well as a "C" button to clear calculation. Create math operations buttons
 
-[] Capture these and set to server via POST.
+[] Capture these and send to server via POST.
 
 [] Compute logic on server side and send back, grab via GET.
 
