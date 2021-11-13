@@ -1,3 +1,5 @@
+let mathProblem = [];
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -13,11 +15,10 @@ app.get('/calculation', (req, res) => {
 
 app.post('/calculation', (req, res) => {
     console.log('in post /calculation');
-    //something.push(req.body);
+    mathProblem.push(req.body);
+    console.log(mathProblem);
     res.sendStatus(201);
 }); // end post
-
-
 
 
 
