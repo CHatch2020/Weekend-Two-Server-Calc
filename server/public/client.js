@@ -50,10 +50,10 @@ $.ajax({
     console.log('got a response', res);
     let solution = $('#solutionIn');
     let history = $('#historyIn');
-    solution.empty();
+    history.empty();
     // loop array and append the objects
     for (let item of res) {
-        solution.append(`
+        history.append(`
         <li>
             ${item.firstNum}
             ${item.operator}
@@ -62,6 +62,10 @@ $.ajax({
             ${item.answer}
         </li>
         `); // end append
+        solution.empty();
+        solution.append(`
+        ${item.answer}
+        `)
     }; // end loop
 }).catch((error) => {
     alert('error in ajax GET', error);
