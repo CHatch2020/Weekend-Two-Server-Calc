@@ -7,7 +7,7 @@ function onReady(){
     $('#mult').on('click', onMultiply);
     $('#divide').on('click', onDivision);
     $('#submitInputs').on('click', submitEquations);
-    $('#clearButton').on('click', onClear)
+    $('#clearButton').on('click', onClear);
 }; // end onReady
 let operator;
 function onAddition(){
