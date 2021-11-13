@@ -13,11 +13,11 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 [x] Create two inputs and a submit button that shows the "=" as well as a "C" button to clear calculation. Create math operations buttons
 
-[] Capture these and send to server via POST.
+[x] Capture these and send to server via POST.
 
-[] Compute logic on server side and send back, grab via GET.
+[x] Compute logic on server side and send back, grab via GET.
 
-[] Keep history of solutions on server and display on DOM.
+[x] Keep history of solutions on server and display on DOM.
 
 **Stretch**
 

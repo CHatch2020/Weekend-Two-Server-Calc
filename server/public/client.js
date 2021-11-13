@@ -1,12 +1,13 @@
 $(document).ready(onReady);
 
 function onReady(){
-    console.log('These are not the droids you are looking for');
+    getMath();
     $('#add').on('click', onAddition);
     $('#subtract').on('click', onSubtraction);
     $('#mult').on('click', onMultiply);
     $('#divide').on('click', onDivision);
     $('#submitInputs').on('click', submitEquations);
+    $('#clearButton').on('click', onClear)
 }; // end onReady
 let operator;
 function onAddition(){
@@ -21,6 +22,13 @@ function onMultiply(){
 function onDivision(){
     operator = '/';
 }; // end onDivision
+function onClear(){
+    equation = {
+        firstNum: $('#firstNum').val(''),
+        operator: '',
+        secondNum: $('#secondNum').val('')
+    }
+}; // end onClear
 
 
 function submitEquations(){
