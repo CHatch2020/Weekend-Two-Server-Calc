@@ -34,9 +34,36 @@ function submitEquations(){
         url: '/calculation',
         data: equation
     }).then((res) => {
-        console.log('Math equation created', res);
-        
+        console.log(res);
+        getMath();
     }).catch((error) => {
         alert('Error in POST', error);
     })
 }; // end submitEquations
+
+function getMath(){
+    // get the array to display to DOM
+$.ajax({
+    method: 'GET',
+    url: '/calculation'
+}).then((res) => {
+    console.log('got a response', res);
+    let solution = $('#solutionIn');
+    let history = $('#historyIn');
+    solution.empty();
+    // loop array and append the objects
+    for (let item of res) {
+        solution.append(`
+        <li>
+            ${item.firstNum}
+            ${item.operator}
+            ${item.secondNum}
+            =
+            ${item.answer}
+        </li>
+        `); // end append
+    }; // end loop
+}).catch((error) => {
+    alert('error in ajax GET', error);
+});
+}; // end getMath

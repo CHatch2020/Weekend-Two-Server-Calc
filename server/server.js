@@ -10,7 +10,8 @@ app.use(express.static('server/public'));
 
 app.get('/calculation', (req, res) => {
     console.log('in get /calculation');
-    res.send('hello');
+    solveEquation();
+    res.send(mathProblem);
 }); // end get
 
 app.post('/calculation', (req, res) => {
@@ -20,6 +21,20 @@ app.post('/calculation', (req, res) => {
     res.sendStatus(201);
 }); // end post
 
+
+function solveEquation(){
+    for (let items of mathProblem) {
+        if (items.operator === '+') {
+            items.answer = Number(items.firstNum) + Number(items.secondNum);
+        } else if(items.operator === '-') {
+            items.answer = Number(items.firstNum) - Number(items.secondNum);
+        } else if(items.operator === '*') {
+            items.answer = Number(items.firstNum) * Number(items.secondNum);
+        } else if(items.operator === '/') {
+            items.answer = Number(items.firstNum) / Number(items.secondNum);
+        }
+    }; // end loop
+}; // end solveEquation
 
 
 
