@@ -1,5 +1,4 @@
-![License](https://img.shields.io/github/license/CHatch2020/Weekend-Two-Server-Calc.svg?style=for-the-badge) ![Repo Size](https://img.shields.io/github/languages/code-size/CHatch2020/Weekend-Two-Server-Calc.svg?style=for-the-badge) ![TOP_LANGUAGE](https://img.shields.io/github/languages/top/CHatch2020/Weekend-Two-Server-Calc.svg?style=for-the-badge) ![FORKS](https://img.shields.io/github/forks/CHatch2020/Weekend-Two-Server-Calc.svg?style=for-the-badge&social) ![Stars](https://img.shields.io/github/stars/CHatch2020/Weekend-Two-Server-Calc.svg?style=for-the-badge)
-    
+
 # Server Calculator
 
 ## Table of Contents
